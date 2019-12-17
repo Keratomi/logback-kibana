@@ -19,7 +19,7 @@ public class DemoClassWithErrorLog implements LogMessagePrinter {
     @Override
     public void printLogMessage() {
         Random r = new Random();
-        LOGGER.debug("This is an error message", ERRORS.get(r.nextInt(ERRORS.size())));
+        LOGGER.error("This is an error message", ERRORS.get(r.nextInt(ERRORS.size())));
     }
 
     @PostConstruct
